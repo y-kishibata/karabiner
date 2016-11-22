@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+<root>
+  <!-- RDPを指し示す設定 -->
+  <appdef>
+    <appname>RDC</appname>
+    <equal>com.microsoft.rdc.mac</equal>
+  </appdef>
+  <appdef>
+    <appname>parallels</appname>
+    <equal>com.parallels.desktop.console</equal>
+  </appdef>
+
+  <!-- 右CommandをRDPの時に切り替える設定 -->
+  <item>
+    <name>Command_R to Option_R (only in vertual matchine, RDC)</name>
+    <identifier>private.for rdc</identifier>
+    <only>RDC, parallels</only>
+    <autogen>
+      __KeyToKey__
+      KeyCode::COMMAND_R,
+      KeyCode::OPTION_R
+    </autogen>
+  </item>
+
+  <!-- 全角・半角切り替え -->
+  <item>
+    <name>Command_L+` to Eisuu/Kana (toggle)</name>
+    <identifier>private.for_command_l_backquote_to_toggle</identifier>
+    <not>RDC, parallels</not>
+    <autogen>
+      __KeyToKey__
+      KeyCode::BACKQUOTE, ModifierFlag::COMMAND_L | ModifierFlag::NONE,
+      KeyCode::VK_JIS_TOGGLE_EISUU_KANA
+    </autogen>
+  </item>
+
+  <!-- 全角・半角切り替え2 -->
+  <item>
+    <name>Command_R+` to Eisuu/Kana (toggle)</name>
+    <identifier>private.for_command_r_backquote_to_toggle</identifier>
+    <not>RDC, parallels</not>
+    <autogen>
+      __KeyToKey__
+      KeyCode::BACKQUOTE, ModifierFlag::COMMAND_R | ModifierFlag::NONE,
+      KeyCode::VK_JIS_TOGGLE_EISUU_KANA
+    </autogen>
+  </item>
+
+  <!-- 全角・半角の切り替え3 -->
+  <item>
+    <name>Option_L+` to Eisuu/Kana (toggle)</name>
+    <identifier>private.for_option_l_backquote_to_toggle</identifier>
+    <not>RDC, parallels</not>
+    <autogen>
+      __KeyToKey__
+      KeyCode::BACKQUOTE, ModifierFlag::OPTION_L | ModifierFlag::NONE,
+      KeyCode::VK_JIS_TOGGLE_EISUU_KANA
+    </autogen>
+  </item>
+
+  <!-- 全角・半角の切り替え4 -->
+  <item>
+    <name>Option_R+` to Eisuu/Kana (toggle)</name>
+    <identifier>private.for_option_r_backquote_to_toggle</identifier>
+    <not>RDC, parallels</not>
+    <autogen>
+      __KeyToKey__
+      KeyCode::BACKQUOTE, ModifierFlag::OPTION_R | ModifierFlag::NONE,
+      KeyCode::VK_JIS_TOGGLE_EISUU_KANA
+    </autogen>
+  </item>
+
+  <!-- 全角・半角の切り替え5 ※未完成-->
+  <item>
+    <name>Shift_L+Capslock to Eisuu/Kana (toggle)</name>
+    <identifier>private.for_shift_l_capslock_to_toggle</identifier>
+    <not>RDC, parallels</not>
+    <autogen>
+      __KeyToKey__
+      KeyCode::CAPSLOCK, ModifierFlag::SHIFT_L | ModifierFlag::NONE,
+      KeyCode::VK_JIS_TOGGLE_EISUU_KANA
+    </autogen>
+  </item>
+
+  <!-- アプリケーションキーをコマンドに変更 -->
+  <item>
+    <name>App Key to Command_R (for mac)</name>
+    <identifier>private.for_app_key_to_command_r</identifier>
+    <not>RDC, parallels</not>
+    <autogen>
+      __KeyToKey__
+      KeyCode::PC_APPLICATION,
+      KeyCode::COMMAND_R
+    </autogen>
+  </item>
+  <item>
+    <name>App Key to Control_R (only in vertual matchine, RDC)</name>
+    <identifier>private.for_app_key_to_control_r</identifier>
+    <only>RDC, parallels</only>
+    <autogen>
+      __KeyToKey__
+      KeyCode::PC_APPLICATION,
+      KeyCode::CONTROL_R
+    </autogen>
+  </item>
+</root>
