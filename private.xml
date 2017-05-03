@@ -70,19 +70,27 @@
     </autogen>
   </item>
 
-  <!-- 全角・半角の切り替え5 ※未完成-->
-  <!--
+  <!-- 全角・半角の切り替え5 ※SeilでCapslockをF19に割当-->
   <item>
-    <name>Shift_L+Capslock to Eisuu/Kana (toggle)</name>
-    <identifier>private.for_shift_l_capslock_to_toggle</identifier>
-    <not>RDC, parallels</not>
+    <name>Shift_L+Capslock(F19) to Eisuu/Kana (toggle)</name>
+    <identifier>private.for_shift_l_capslock_F19_to_toggle</identifier>
     <autogen>
       __KeyToKey__
-      KeyCode::CAPSLOCK, ModifierFlag::SHIFT_L | ModifierFlag::NONE,
+      KeyCode::F19, ModifierFlag::SHIFT_L | ModifierFlag::NONE,
       KeyCode::VK_JIS_TOGGLE_EISUU_KANA
     </autogen>
   </item>
-  -->
+
+  <!-- Capslock単体をCapslockとして扱う ※SeilでCapslockをF19に割当-->
+  <item>
+    <name>Capslock(F19) to Capslock</name>
+    <identifier>private.for_capslock_F19_to_capslock</identifier>
+    <autogen>
+      __KeyToKey__
+      KeyCode::F19,
+      KeyCode::CAPSLOCK
+    </autogen>
+  </item>
 
   <!-- アプリケーションキーをコマンドに変更 -->
   <item>
