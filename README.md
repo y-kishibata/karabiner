@@ -24,6 +24,17 @@
   - F19単体をCapslockとして対応
   - Shift+F19で全角・半角切り替え
 
+## Elements用の追加設定
+- For Japanese Windows Emuration（日本語環境向けの設定 Windowsエミュレート） (rev 1)
+  - Shift＋Capslockを押した場合に英数・かなをtoggle方式にする
+  - Command＋チルダを押した場合に英数・かなをtoggle方式にする
+  - Command＋Escを押した場合に英数・かなをtoggle方式にする
+
+### 注意点
+- 配置先は ~/.config/karabiner/assets/complex_modifications
+- ファイル名は数字.jsonなら問題ないようなので重複しないようにすること
+
 ## 変更履歴
 - 2016.11.22 作成
 - 2017.05.03 Capslockの制御を変更
+- 2018.05.24 Elementsで利用する設定を追加
