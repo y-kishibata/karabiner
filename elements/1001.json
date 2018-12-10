@@ -58,6 +58,7 @@
         }
       ]
     },
+
     {
       "description": "Command＋`チルダを押した場合に英数・かなをtoggle方式にする",
       "manipulators": [
@@ -115,6 +116,7 @@
         }
       ]
     },
+
     {
       "description": "Command＋Escを押した場合に英数・かなをtoggle方式にする",
       "manipulators": [
@@ -167,6 +169,73 @@
           "to": [
             {
               "key_code": "japanese_kana"
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "description": "Command＋Backspaceを押した場合にCtrl+[+英数キーにする",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "delete_or_backspace",
+            "modifiers": {
+              "mandatory": [
+                "command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "open_bracket",
+              "modifiers": [
+                "control"
+              ]
+            },
+            {
+              "key_code": "japanese_eisuu"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "keyboard_type_if",
+              "keyboard_types": [
+                "ansi",
+                "iso"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "delete_or_backspace",
+            "modifiers": {
+              "mandatory": [
+                "command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "close_bracket",
+              "modifiers": [
+                "control"
+              ]
+            },
+            {
+              "key_code": "japanese_eisuu"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "keyboard_type_if",
+              "keyboard_types": [
+                "jis"
+              ]
             }
           ]
         }
