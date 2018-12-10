@@ -29,6 +29,9 @@
   - Shift＋Capslockを押した場合に英数・かなをtoggle方式にする
   - Command＋チルダを押した場合に英数・かなをtoggle方式にする
   - Command＋Escを押した場合に英数・かなをtoggle方式にする
+- For HHKB Arrow Emuration（HHKB向けの設定 矢印キーエミュレート） (rev 1)
+  - Control＋[;'/を押した場合に矢印キーにする
+    - ※Fn+をCtrl+で代用するため設定
 
 ### 注意点
 - 配置先は ~/.config/karabiner/assets/complex_modifications
