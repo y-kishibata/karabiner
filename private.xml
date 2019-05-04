@@ -92,6 +92,17 @@
     </autogen>
   </item>
 
+  <!-- Capslock単体をESCとして扱う ※SeilでCapslockをF19に割当-->
+  <item>
+    <name>Capslock(F19) to Esc</name>
+    <identifier>private.for_capslock_F19_to_esc</identifier>
+    <autogen>
+      __KeyToKey__
+      KeyCode::F19,
+      KeyCode::ESCAPE
+    </autogen>
+  </item>
+
   <!-- アプリケーションキーをコマンドに変更 -->
   <item>
     <name>App Key to Command_R (for mac)</name>
