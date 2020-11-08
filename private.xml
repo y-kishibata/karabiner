@@ -124,4 +124,46 @@
       KeyCode::CONTROL_R
     </autogen>
   </item>
+
+  <!-- 矢印をASWDに変更 -->
+  <item>
+    <name>Allow Left to A</name>
+    <identifier>private.allow_left_key_to_a</identifier>
+    <not>RDC, parallels</not>
+    <autogen>
+      __KeyToKey__
+      KeyCode::CURSOR_LEFT,
+      KeyCode::A
+    </autogen>
+  </item>
+  <item>
+    <name>Allow Right to D</name>
+    <identifier>private.allow_right_key_to_d</identifier>
+    <not>RDC, parallels</not>
+    <autogen>
+      __KeyToKey__
+      KeyCode::CURSOR_RIGHT,
+      KeyCode::D
+    </autogen>
+  </item>
+  <item>
+    <name>Allow Up to W</name>
+    <identifier>private.allow_up_key_to_w</identifier>
+    <not>RDC, parallels</not>
+    <autogen>
+      __KeyToKey__
+      KeyCode::CURSOR_UP,
+      KeyCode::W
+    </autogen>
+  </item>
+  <item>
+    <name>Allow Down to S</name>
+    <identifier>private.allow_down_key_to_s</identifier>
+    <not>RDC, parallels</not>
+    <autogen>
+      __KeyToKey__
+      KeyCode::CURSOR_DOWN,
+      KeyCode::S
+    </autogen>
+  </item>
 </root>
