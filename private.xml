@@ -103,6 +103,17 @@
     </autogen>
   </item>
 
+  <!-- Capslock単体をSpaceとして扱う ※SeilでCapslockをF19に割当-->
+  <item>
+    <name>Capslock(F19) to Space</name>
+    <identifier>private.for_capslock_F19_to_space</identifier>
+    <autogen>
+      __KeyToKey__
+      KeyCode::F19,
+      KeyCode::SPACE
+    </autogen>
+  </item>
+
   <!-- アプリケーションキーをコマンドに変更 -->
   <item>
     <name>App Key to Command_R (for mac)</name>
